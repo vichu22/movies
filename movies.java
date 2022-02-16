@@ -20,7 +20,7 @@ public class movies {
 			String driver ="com.mysql.jdbc.Driver";
 			String url="jdbc:mysql://localhost:3306/db";
 			String username="root";
-			String password="asdf";
+			String password="******";
 			Class.forName(driver);
 			Connection con=DriverManager.getConnection(url,username,password);
 			System.out.println("connected");
@@ -44,7 +44,7 @@ public class movies {
 			String driver ="com.mysql.jdbc.Driver";
 			String url="jdbc:mysql://localhost:3306/db";
 			String username="root";
-			String password="asdf";
+			String password="******";
 			Class.forName(driver);
 			Connection con=DriverManager.getConnection(url,username,password);
 			PreparedStatement c0=con.prepareStatement("insert into movies values('Fight club','Brad pitt','Helena carter','David fincher',1999)");
@@ -73,7 +73,7 @@ public class movies {
 			String driver ="com.mysql.jdbc.Driver";
 			String url="jdbc:mysql://localhost:3306/db";
 			String username="root";
-			String password="asdf";
+			String password="******";
 			Class.forName(driver);
 			Connection con=DriverManager.getConnection(url,username,password);
 			PreparedStatement out=con.prepareStatement("select * from movies");
